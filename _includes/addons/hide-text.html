@@ -8,10 +8,24 @@
   <p>A height declaration is required for this to function.</p>
 
 {% highlight scss %}
-div {
+.element {
   @include hide-text;
   background-image: url(logo.png);
-  height: 40px;
+}
+{% endhighlight %}
+
+  <h3>CSS Output</h3>
+{% highlight scss %}
+.element {
+
+}
+{% endhighlight %}
+
+  <p>You can optionally pass a height value:</p>
+
+{% highlight scss %}
+.element {
+  @include hide-text(2em);
 }
 {% endhighlight %}
 </article>
